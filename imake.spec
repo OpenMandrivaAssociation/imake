@@ -49,14 +49,14 @@ rm -rf %{buildroot}
 %{_bindir}/mkhtmlindex
 %{_bindir}/revpath
 %{_bindir}/xmkmf
-%{_mandir}/man1/ccmakedep.1x.bz2
-%{_mandir}/man1/cleanlinks.1x.bz2
-%{_mandir}/man1/imake.1x.bz2
-%{_mandir}/man1/makeg.1x.bz2
-%{_mandir}/man1/mergelib.1x.bz2
-%{_mandir}/man1/mkdirhier.1x.bz2
-%{_mandir}/man1/mkhtmlindex.1x.bz2
-%{_mandir}/man1/revpath.1x.bz2
-%{_mandir}/man1/xmkmf.1x.bz2
+%{_mandir}/man1/ccmakedep.*
+%{_mandir}/man1/cleanlinks.*
+%{_mandir}/man1/imake.*
+%{_mandir}/man1/makeg.*
+%{_mandir}/man1/mergelib.*
+%{_mandir}/man1/mkdirhier.*
+%{_mandir}/man1/mkhtmlindex.*
+%{_mandir}/man1/revpath.*
+%{_mandir}/man1/xmkmf.*
 
 
