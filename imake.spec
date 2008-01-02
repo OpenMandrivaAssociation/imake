@@ -8,6 +8,7 @@ Source: http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.
 Patch0: cleanlinks.patch
 License: MIT
 Packager: Gustavo Pichorim Boiko <boiko@mandriva.com> 
+BuildRoot: %{_tmppath}/%{name}-root
 Requires: x11-util-cf-files >= 1.0.2-%{mkrel 3}
 
 BuildRequires: x11-util-macros >= 1.0.1
