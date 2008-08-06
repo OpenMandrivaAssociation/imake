@@ -1,6 +1,6 @@
 Name: imake
 Version: 1.0.2
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: C preprocessor interface to the make utility
 Group: System/X11
 URL: http://xorg.freedesktop.org
