@@ -1,11 +1,12 @@
 Name: imake
 Version: 1.0.2
-Release: %mkrel 6
+Release: %mkrel 7
 Summary: C preprocessor interface to the make utility
 Group: System/X11
 URL: http://xorg.freedesktop.org
 Source: http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.bz2
 Patch0: cleanlinks.patch
+Patch1: imake-1.0.2-Wformat-security=error.patch
 License: MIT
 Packager: Gustavo Pichorim Boiko <boiko@mandriva.com> 
 BuildRoot: %{_tmppath}/%{name}-root
@@ -24,6 +25,7 @@ the various items to be built.
 %prep
 %setup -q -n %{name}-%{version}
 %patch0 -p0 -b .cleanlinks_fix
+%patch1 -p1
 
 %build
 %configure2_5x	--with-config-dir=%{_datadir}/X11/config \
