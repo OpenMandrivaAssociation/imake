@@ -1,6 +1,6 @@
 Name: imake
-Version: 1.0.2
-Release: %mkrel 9
+Version: 1.0.3
+Release: %mkrel 1
 Summary: C preprocessor interface to the make utility
 Group: System/X11
 URL: http://xorg.freedesktop.org
@@ -8,7 +8,6 @@ Source: http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.
 Patch0: cleanlinks.patch
 Patch1: imake-1.0.2-Wformat-security=error.patch
 License: MIT
-Packager: Gustavo Pichorim Boiko <boiko@mandriva.com> 
 BuildRoot: %{_tmppath}/%{name}-root
 Requires: x11-util-cf-files >= 1.0.2-%{mkrel 3}
 
