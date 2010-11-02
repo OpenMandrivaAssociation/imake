@@ -1,5 +1,5 @@
 Name: imake
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: C preprocessor interface to the make utility
 Group: System/X11
