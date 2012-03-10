@@ -1,14 +1,12 @@
 Name: imake
-Version: 1.0.4
-Release: %mkrel 2
+Version: 1.0.5
+Release: 1
 Summary: C preprocessor interface to the make utility
 Group: System/X11
 URL: http://xorg.freedesktop.org
-Source: http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.bz2
-Patch0: cleanlinks.patch
-Patch1: imake-1.0.2-Wformat-security=error.patch
+Source0: http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.bz2
+Patch0: imake-1.0.2-Wformat-security=error.patch
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 Requires: x11-util-cf-files >= 1.0.2-%{mkrel 3}
 
 BuildRequires: x11-util-macros >= 1.0.1
@@ -23,8 +21,7 @@ the various items to be built.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p0 -b .cleanlinks_fix
-%patch1 -p1
+%patch0 -p1
 
 %build
 %configure2_5x	--with-config-dir=%{_datadir}/X11/config \
@@ -33,14 +30,9 @@ the various items to be built.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/ccmakedep
 %{_bindir}/cleanlinks
 %{_bindir}/imake
