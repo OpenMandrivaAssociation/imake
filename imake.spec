@@ -1,11 +1,11 @@
 Name:		imake
-Version:	1.0.4
-Release:	3
+Version:	1.0.5
+Release:	1
 Summary:	C preprocessor interface to the make utility
+License:	Free
 Group:		System/X11
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.bz2
-Patch0:		cleanlinks.patch
 Patch1:		imake-1.0.2-Wformat-security=error.patch
 
 BuildRequires:	pkgconfig(xorg-macros)
