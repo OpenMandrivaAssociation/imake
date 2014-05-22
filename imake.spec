@@ -1,6 +1,6 @@
 Name:		imake
-Version:	1.0.6
-Release:	5
+Version:	1.0.7
+Release:	1
 Summary:	C preprocessor interface to the make utility
 License:	Free
 Group:		System/X11
