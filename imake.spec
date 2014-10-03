@@ -6,7 +6,6 @@ License:	Free
 Group:		System/X11
 Url:		http://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.bz2
-Patch1:		imake-1.0.2-Wformat-security=error.patch
 
 BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	pkgconfig(xproto)
