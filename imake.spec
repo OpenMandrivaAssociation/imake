@@ -1,6 +1,6 @@
 Name:		imake
-Version:	1.0.7
-Release:	6
+Version:	1.0.8
+Release:	1
 Summary:	C preprocessor interface to the make utility
 License:	Free
 Group:		System/X11
@@ -19,19 +19,18 @@ and  special  make  rules)  to  be kept separate from the descriptions of
 the various items to be built.
 
 %prep
-%setup -q
-%apply_patches
+%autosetup -p1
 
 %build
-%configure2_5x \
+%configure \
 	--with-config-dir=%{_datadir}/X11/config \
 	--x-includes=%{_includedir} \
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/ccmakedep
@@ -52,4 +51,3 @@ the various items to be built.
 %{_mandir}/man1/mkhtmlindex.*
 %{_mandir}/man1/revpath.*
 %{_mandir}/man1/xmkmf.*
-
