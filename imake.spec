@@ -1,11 +1,11 @@
 Name:		imake
-Version:	1.0.8
+Version:	1.0.9
 Release:	1
 Summary:	C preprocessor interface to the make utility
 License:	Free
 Group:		System/X11
 Url:		http://xorg.freedesktop.org
-Source0:	http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(xorg-macros)
 BuildRequires:	pkgconfig(xproto)
@@ -42,12 +42,12 @@ the various items to be built.
 %{_bindir}/mkhtmlindex
 %{_bindir}/revpath
 %{_bindir}/xmkmf
-%{_mandir}/man1/ccmakedep.*
-%{_mandir}/man1/cleanlinks.*
-%{_mandir}/man1/imake.*
-%{_mandir}/man1/makeg.*
-%{_mandir}/man1/mergelib.*
-%{_mandir}/man1/mkdirhier.*
-%{_mandir}/man1/mkhtmlindex.*
-%{_mandir}/man1/revpath.*
-%{_mandir}/man1/xmkmf.*
+%doc %{_mandir}/man1/ccmakedep.*
+%doc %{_mandir}/man1/cleanlinks.*
+%doc %{_mandir}/man1/imake.*
+%doc %{_mandir}/man1/makeg.*
+%doc %{_mandir}/man1/mergelib.*
+%doc %{_mandir}/man1/mkdirhier.*
+%doc %{_mandir}/man1/mkhtmlindex.*
+%doc %{_mandir}/man1/revpath.*
+%doc %{_mandir}/man1/xmkmf.*
