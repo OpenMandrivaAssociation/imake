@@ -4,7 +4,7 @@ Release:	1
 Summary:	C preprocessor interface to the make utility
 License:	Free
 Group:		System/X11
-Url:		http://xorg.freedesktop.org
+Url:		https://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/util/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(xorg-macros)
